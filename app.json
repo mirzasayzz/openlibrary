@@ -1,0 +1,20 @@
+{
+  "name": "Open Library",
+  "description": "An online repository of free books.",
+  "repository": "https://github.com/mirzasayzz/BookManagementSystem",
+  "keywords": ["php", "mysql", "book", "library"],
+  "addons": [
+    "cleardb"
+  ],
+  "env": {
+    "APP_ENV": {
+      "description": "Environment the app is running in (production, development)",
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+} 

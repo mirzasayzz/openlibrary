@@ -1,0 +1,43 @@
+OPEN LIBRARY - SETUP AND USAGE INSTRUCTIONS
+
+The Open Library book management system is now set up and ready to use. Here's how to use it:
+
+1. ACCESSING THE SITE
+   - The site is available at: http://localhost/OpenLibrary/
+   - For local testing, you can also use: http://localhost:8080/ (if using PHP's built-in server)
+
+2. FEATURES IMPLEMENTED:
+   - Complete user registration and login system (using email)
+   - Book listing with trending and popular sections
+   - Book details pages showing metadata and descriptions
+   - Book reading interface with embedded PDF viewer
+   - Search functionality to find books by title or author
+   - Personal reading list with status tracking (Want to Read, Reading, Read)
+   - Responsive design that works on mobile and desktop
+
+3. DATABASE SETUP:
+   - The database has been initialized with sample books
+   - Database credentials are in config.php (MySQL user: root, no password, database: openlibrary)
+   - If needed, you can reinitialize the database by accessing: http://localhost/OpenLibrary/database.php
+
+4. USER REGISTRATION:
+   - Click "Sign Up" to create a new account
+   - Use any email address (doesn't need to be real for testing)
+   - Password must be at least 6 characters
+
+5. BOOK MANAGEMENT:
+   - After logging in, you can add books to your personal collection
+   - Mark books as "Want to Read", "Currently Reading", or "Read"
+   - Access your personal collection from the "My Books" page
+   - Filter your books by reading status
+
+6. READING BOOKS:
+   - All books can be read within the browser using the embedded PDF viewer
+   - PDFs are hosted on uploadthing.com using the provided credentials
+
+7. CUSTOMIZATION:
+   - The site design uses Bootstrap for responsive layout
+   - Styles can be customized in the header.php file
+   - Database configuration can be modified in config.php
+
+Enjoy using your new Open Library system! If you have any questions or need further assistance, please let me know. 

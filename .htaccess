@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Handle redirects properly for Heroku
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+# Handle authorization header
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Set default character set
+AddDefaultCharset UTF-8
+
+# Disable directory browsing
+Options -Indexes 
